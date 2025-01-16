@@ -6,4 +6,4 @@
 Despite the ubiquitousness and versatility of palm oil, palm oil plantations have contributed to massive deforestation, especially within highly biodiverse forests. The goal of this project is to develop a model that can detect palm oil plantations from satellite images. This model can be used to assist with monitoring deforestation and allow government agencies to enforce environmental policies, thereby preventing further deforestation and biodversity loss.
 
 ## Results
-- Utilizing a pre-trained VGG19 deep convolutional neural network, we achieved an F1-score of 0.91 and a ROC-AUC score of 0.952 and Average Precision (AP) score of 0.9629 on the holdout dataset.
+- Utilizing the pre-trained VGG19 deep convolutional neural network, we achieved an F1-score of 0.91, a ROC-AUC score of 0.952 and Average Precision (AP) score of 0.9629 on the holdout dataset.
