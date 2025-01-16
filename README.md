@@ -44,3 +44,7 @@ Despite the ubiquitousness and versatility of palm oil, palm oil plantations hav
   - The average F1 score of negative and positive classes was used to update the best model
 - Model was trained on Google Colab's L4 GPU
   
+## Future Notes
+- Try a different pre-trained model
+- Try unfreezing and doing another grid search but with learning rate and number of epochs
+- Adjusting the augmentation for the positive-class images, maybe reducing one or two different types of transformations
