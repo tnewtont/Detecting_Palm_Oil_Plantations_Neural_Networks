@@ -8,13 +8,13 @@ Despite the ubiquitousness and versatility of palm oil, palm oil plantations hav
 ## Results
 - Utilizing the pre-trained VGG19 deep convolutional neural network, we achieved an F1-score of 0.91, a ROC-AUC score of 0.952 and Average Precision (AP) score of 0.9629 on the holdout dataset.
   
-![alt_text](images/classification_report.png)
+![alt_text](images/classification_report_final.png)
 
-![alt_text](images/confusion_matrix.png)
+![alt_text](images/confusion_matrix_final.png)
 
-![alt_text](images/precision_recall_curve.png)
+![alt_text](images/precision_recall_curve_final.png)
 
-![alt_text](images/roc_auc_curve.png)
+![alt_text](images/roc_auc_curve_final.png)
 
 
 ## Data Notes
