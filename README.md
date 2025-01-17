@@ -7,6 +7,7 @@ Despite the ubiquitousness and versatility of palm oil, palm oil plantations hav
 
 ## Results
 - Utilizing the pre-trained VGG19 deep convolutional neural network, we achieved an F1-score of 0.91, a ROC-AUC score of 0.952 and Average Precision (AP) score of 0.9629 on the holdout dataset.
+- Unfreezing was subsequently utilized with a lower learning rate, achieving an F1-score of 0.92, a ROC-AUC score of 0.9701 and AP score of 0.97015 on the holdout dataset.
   
 ![alt_text](images/classification_report_final.png)
 
@@ -34,17 +35,18 @@ Despite the ubiquitousness and versatility of palm oil, palm oil plantations hav
 
 ## Model Notes
 - The model used the pre-trained VGG19 deep convolutional neural network with a custom head
-- Optimizer was Adam
+- Freezing and unfreezing was utilized
+- Optimizer was AdamW
 - Various transformations were used to augment the positive-class images
 - Train and validation was done through 80/20 stratified split
 - Dropouts, L2 regularization, He normal initialization, and a lower learning rate were used to prevent overfitting
 - A grid search was done on various L2 regularization values and the number of epochs, specifically:
-  - For L2 regularization, 0.035, 0.036, 0.037, 0.038, 0.039, and 0.04
+  - For L2 regularization, 0.03851, 0.03852, 0.03853, 0.03854, and 0.03855
   - For the number of epochs, 3 and 4
   - The average F1 score of negative and positive classes was used to update the best model
 - Model was trained on Google Colab's L4 GPU
   
 ## Future Notes
-- Try a different pre-trained model
-- Try unfreezing and doing another grid search but with learning rate and number of epochs
+- Try a different pre-trained model like ResNet50
+- Try conducting another grid search with learning rate and weight decay hyperparameters while fine tuning
 - Adjusting the augmentation for the positive-class images, maybe reducing one or two different types of transformations
