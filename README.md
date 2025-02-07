@@ -48,6 +48,6 @@ Despite the ubiquitousness and versatility of palm oil, palm oil plantations hav
   
 ## Future Notes
 - Try a different pre-trained model like ResNet50
-- Try conducting another grid search with learning rate and weight decay hyperparameters while fine tuning
+- Try conducting a random grid search to save on time and computational cost
 - Adjusting the augmentation for the positive-class images, maybe reducing one or two different types of transformations
 - Setting a higher score threshold for positive-class images at around 0.6 - 0.7 and/or higher
